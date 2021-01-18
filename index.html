@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap&subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <title>DongPhym</title>
+</head>
+<body>
+    <header class="header">
+        
+            <div class="header-with-search">
+                <div class="header__logo">
+                    <a href="#" class="header__logo-link">
+                        <div class="header__logo-text">
+                            <b>DONGPHYM</b>
+                            <span>NET</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="header__search">
+                    <div class="header__search-input-wrap">
+                        <input type="text" class="header__search-input" placeholder="Tìm kiếm sản phẩm">
+                        <div class="header__search-history">                            
+                        </div>
+                    </div> 
+                    <a href="">
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fas fa-search"></i>
+                        </button>  
+                    </a>             
+                </div>
+                    <a href="" class="">
+                        <button class="header__search-btn2">
+                            Tìm kiếm nâng cao
+                        </button> 
+                    </a>        
+            </div>
+            <div class="header__navbar">
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item">
+                        <a href="">Thể Loại
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="header__navbar-sub-list">
+                            <div class="sub-list-wrap-1">
+                                <li class="header__navbar-sub-item"><a href="">Tình cảm - lãng mạn</a></li>
+                                <li class="header__navbar-sub-item"><a href="">Hài Hước</a></li>
+                                <li class="header__navbar-sub-item"><a href="">Học Đường</a></li>
+                                <li class="header__navbar-sub-item"><a href="">Phiêu lưu</a></li>
+                                <li class="header__navbar-sub-item"><a href="">Webdrama</a></li>
+                            </div>
+                           <div class="sub-list-wrap-2">
+                                <li class="header__navbar-sub-item"><a href="">Võ Thuật</a></li>
+                                <li class="header__navbar-sub-item"><a href="">Gia Đình</a></li>
+                                <li class="header__navbar-sub-item"><a href="">Giải Trí</a></li>
+                                <li class="header__navbar-sub-item"><a href="">Thần Thoại</a></li>
+                                <li class="header__navbar-sub-item"><a href="">Đam Mỹ - Bách Hợp</a></li>
+                           </div> 
+                           <div class="sub-list-wrap-3">
+                            <li class="header__navbar-sub-item"><a href="">Cổ trang</a></li>
+                            <li class="header__navbar-sub-item"><a href="">Chiến Tranh</a></li>
+                            <li class="header__navbar-sub-item"><a href="">Hình Sự</a></li>
+                            <li class="header__navbar-sub-item"><a href="">Tâm Lý</a></li>                    
+                            </div> 
+                        </ul>                      
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="">Quốc Gia
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="header__navbar-sub-list">
+                            <div class="sub-list-wrap-1">
+                                <li class="header__navbar-sub-item"><a href="">Hàn Quốc</a></li>
+                                <li class="header__navbar-sub-item"><a href="">Trung Quốc</a></li>
+                                <li class="header__navbar-sub-item"><a href="">Ấn Độ</a></li>
+                                <li class="header__navbar-sub-item"><a href="">Tất Cả</a></li>
+                                
+                            </div>
+                           <div class="sub-list-wrap-2">
+                                <li class="header__navbar-sub-item"><a href="">Nhật Bản</a></li>
+                                <li class="header__navbar-sub-item"><a href="">Mỹ</a></li>
+                                <li class="header__navbar-sub-item"><a href="">Philipin</a></li>
+                           </div> 
+                           <div class="sub-list-wrap-3">
+                            <li class="header__navbar-sub-item"><a href="">Thái Lan</a></li>
+                            <li class="header__navbar-sub-item"><a href="">Việt Nam</a></li>
+                            <li class="header__navbar-sub-item"><a href="">Âu Mỹ</a></li>                                            
+                            </div> 
+                        </ul>                          
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="">Phim Bộ
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="header__navbar-sub-list">
+                            <div class="sub-list-wrap-1">
+                                <li class="header__navbar-sub-item"><a href="">Hàn Quốc</a></li>
+                                <li class="header__navbar-sub-item"><a href="">Trung Quốc</a></li>
+                                <li class="header__navbar-sub-item"><a href="">Ấn Độ</a></li>
+                                <li class="header__navbar-sub-item"><a href="">Tất Cả</a></li>
+                                
+                            </div>
+                           <div class="sub-list-wrap-2">
+                                <li class="header__navbar-sub-item"><a href="">Nhật Bản</a></li>
+                                <li class="header__navbar-sub-item"><a href="">Mỹ</a></li>
+                                <li class="header__navbar-sub-item"><a href="">Philipin</a></li>
+                           </div> 
+                           <div class="sub-list-wrap-3">
+                            <li class="header__navbar-sub-item"><a href="">Thái Lan</a></li>
+                            <li class="header__navbar-sub-item"><a href="">Việt Nam</a></li>
+                            <li class="header__navbar-sub-item"><a href="">Âu Mỹ</a></li>                                            
+                            </div> 
+                        </ul>                       
+                    </li>
+                    <li class="header__navbar-item"><a href="">Phim Chiếu Rạp</a></li>
+                    <li class="header__navbar-item"><a href="">Phim Sắp Chiếu</a></li>
+                    <li class="header__navbar-item"><a href="">TV Show</a></li>
+                    <li class="header__navbar-item"><a href="">Hoạt Hình - Anime</a></li>
+                </ul>
+                <div class="navigation">
+                    <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+                    <label for="navi-toggle" class="navigation__button">
+                        <span class="navigation__icon">&nbsp;</span>              
+                    </label>
+                    <div class="navigation__background">&nbsp;</div>
+                    <div class="navigation__nav">
+                        <ul class="navigation__list">
+                            <li class="navigation__item"><a href="#" class="navigation__link">About us</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link">Our Skills</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link">Our courses</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link">Testimonials</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link">Enroll form</a></li>
+                        </ul>
+                        <ul class="navigation__list">
+                            <li class="navigation__item"><a href="#" class="navigation__link">About us</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link">Our Skills</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link">Our courses</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link">Testimonials</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link">Enroll form</a></li>
+                        </ul>
+                        <ul class="navigation__list">
+                            <li class="navigation__item"><a href="#" class="navigation__link">About us</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link">Our Skills</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link">Our courses</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link">Testimonials</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link">Enroll form</a></li>
+                        </ul>
+                        <ul class="navigation__list">
+                            <li class="navigation__item"><a href="#" class="navigation__link">About us</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link">Our Skills</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link">Our courses</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link">Testimonials</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link">Enroll form</a></li>
+                        </ul>    
+                    </div>
+                </div>
+            </div>   
+    </header>
+    <div class="container">
+
+        <!-- Full-width images with number text -->
+        <div class="mySlides">
+          
+            <img class="banner-img" src="https://media.voocdn.com/media/image/id/5ffc1bdaacc3991eac8b4576" style="width:100%;">
+        </div>
+      
+        <div class="mySlides">
+          
+            <img class="banner-img" src="https://media.voocdn.com/media/image/id/5ffecf80acc399f9748b4567" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          
+            <img class="banner-img" src="https://media.voocdn.com/media/image/id/5fe1d553acc399f27d8b457f" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          
+            <img class="banner-img" src="https://media.voocdn.com/media/image/id/5fcf56eeacc399ff878b458d" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          
+            <img class="banner-img" src="https://media.voocdn.com/media/image/id/5ffffd22acc399f08c8b4570" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          
+            <img class="banner-img" src="https://media.voocdn.com/media/image/id/5fe95449acc399ab9d8b4577" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="https://media.voocdn.com/media/image/id/5ffc1bdaacc3991eac8b4576" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="https://media.voocdn.com/media/image/id/5ffecf80acc399f9748b4567" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="https://media.voocdn.com/media/image/id/5fe1d553acc399f27d8b457f" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="https://media.voocdn.com/media/image/id/5fcf56eeacc399ff878b458d" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="https://media.voocdn.com/media/image/id/5ffffd22acc399f08c8b4570" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="https://media.voocdn.com/media/image/id/5fe95449acc399ab9d8b4577" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+          </div>
+        </div>
+      </div>
+</body>
+    <!-- SLIDE SHOWS -->
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+    <!-- AUTOPLAY -->
+    <script>
+        // Automatic Slideshow - change image every 3 seconds
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 3000);
+        }
+        </script>
+    <!-- container -->
+    <div class="app">
+        <div class="container-box">
+            <div class="container-box-app">
+                <div class="container__heading-box">
+                    <b>ĐỘNG ĐỀ CỬ CHO BẠN</b>
+                    <span>Xem tất cả
+                        <i class="fas fa-angle-right"></i>
+                    </span>
+                </div>
+                <div class="slider owl-carousel">
+                    <div class="card">
+                        <div class="img">
+                          <img src="https://media.voocdn.com/media/image/id/5ef39a3facc399ea668b4630_300x" alt="">
+                        </div>
+                        <div class="content">
+                          <div class="title">
+                           Ta chính là cô nương như thế</div>
+                          <div class="sub-title">
+                            I Am Just This Type of Girl (Con Gái Là Thế Đó)</div>
+                        </div>
+                      </div>
+                
+                <div class="card">
+                    <div class="img">
+                      <img src="https://media.voocdn.com/media/image/id/5f93af9dacc3998db58b45a3_300x" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="title">
+                        Lĩnh vực</div>
+                      <div class="sub-title">
+                        Spirit Realm (The World of Fantasy)</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="img">
+                      <img src="https://media.voocdn.com/media/image/id/5fc58baeacc39908da8b4583_300x" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="title">
+                        Tiền Bối, Đừng Đánh Màu Son Đó</div>
+                      <div class="sub-title">
+                        Sunbae, Don't Put On That Lipstick (2021)</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="img">
+                      <img src="https://media.voocdn.com/media/image/id/5ff4223aacc39929278b456e_300x" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="title">
+                        Hạnh Phúc Nhỏ Của Anh</div>
+                      <div class="sub-title">
+                        My Little Happiness (2021)</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="img">
+                      <img src="https://media.voocdn.com/media/image/id/5fe1d064acc399b3408b456b_300x" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="title">
+                        Tình Yêu Chốn Đô Thị</div>
+                      <div class="sub-title">
+                        Lovestruck in the City (2020)</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="img">
+                      <img src="https://media.voocdn.com/media/image/id/5c9ca410acc399eab98b456e_300x" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="title">
+                        Đảo Hải Tặc</div>
+                      <div class="sub-title">
+                        One Piece</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="img">
+                      <img src="https://media.voocdn.com/media/image/id/5f97df41acc3998d478b4574_300x" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="title">
+                        Hữu Phỉ</div>
+                      <div class="sub-title">
+                        Legend Of Fei</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="img">
+                      <img src="https://media.voocdn.com/media/image/id/5ffc2ceaacc3993b998b4577_300x" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="title">
+                        Thất Nghiệp Chuyển Sinh</div>
+                      <div class="sub-title">
+                        Mushoku Tensei: Jobless Reincarnation</div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="container-box-app container-box-app--dark">
+                <div class="container__heading-box">
+                    <b>Phim Chiếu Rạp</b>
+                    <span>Xem tất cả
+                        <i class="fas fa-angle-right"></i>
+                    </span>
+                </div>
+                <div class="slider owl-carousel">
+                    <div class="card">
+                        <div class="img">
+                          <img src="https://media.voocdn.com/media/image/id/5ef39a3facc399ea668b4630_300x" alt="">
+                        </div>
+                        <div class="content">
+                          <div class="title">
+                           Ta chính là cô nương như thế</div>
+                          <div class="sub-title">
+                            I Am Just This Type of Girl (Con Gái Là Thế Đó)</div>
+                        </div>
+                      </div>
+                
+                <div class="card">
+                    <div class="img">
+                      <img src="https://media.voocdn.com/media/image/id/5f93af9dacc3998db58b45a3_300x" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="title">
+                        Lĩnh vực</div>
+                      <div class="sub-title">
+                        Spirit Realm (The World of Fantasy)</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="img">
+                      <img src="https://media.voocdn.com/media/image/id/5fc58baeacc39908da8b4583_300x" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="title">
+                        Tiền Bối, Đừng Đánh Màu Son Đó</div>
+                      <div class="sub-title">
+                        Sunbae, Don't Put On That Lipstick (2021)</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="img">
+                      <img src="https://media.voocdn.com/media/image/id/5ff4223aacc39929278b456e_300x" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="title">
+                        Hạnh Phúc Nhỏ Của Anh</div>
+                      <div class="sub-title">
+                        My Little Happiness (2021)</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="img">
+                      <img src="https://media.voocdn.com/media/image/id/5fe1d064acc399b3408b456b_300x" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="title">
+                        Tình Yêu Chốn Đô Thị</div>
+                      <div class="sub-title">
+                        Lovestruck in the City (2020)</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="img">
+                      <img src="https://media.voocdn.com/media/image/id/5c9ca410acc399eab98b456e_300x" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="title">
+                        Đảo Hải Tặc</div>
+                      <div class="sub-title">
+                        One Piece</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="img">
+                      <img src="https://media.voocdn.com/media/image/id/5f97df41acc3998d478b4574_300x" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="title">
+                        Hữu Phỉ</div>
+                      <div class="sub-title">
+                        Legend Of Fei</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="img">
+                      <img src="https://media.voocdn.com/media/image/id/5ffc2ceaacc3993b998b4577_300x" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="title">
+                        Thất Nghiệp Chuyển Sinh</div>
+                      <div class="sub-title">
+                        Mushoku Tensei: Jobless Reincarnation</div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="container-box-app">
+                <div class="container__heading-box">
+                    <b>ĐỘNG ĐỀ CỬ CHO BẠN</b>
+                    <span>Xem tất cả
+                        <i class="fas fa-angle-right"></i>
+                    </span>
+                </div>
+                <div class="slider owl-carousel">
+                    <div class="card">
+                        <div class="img">
+                          <img src="https://media.voocdn.com/media/image/id/5ef39a3facc399ea668b4630_300x" alt="">
+                        </div>
+                        <div class="content">
+                          <div class="title">
+                           Ta chính là cô nương như thế</div>
+                          <div class="sub-title">
+                            I Am Just This Type of Girl (Con Gái Là Thế Đó)</div>
+                        </div>
+                      </div>
+                
+                <div class="card">
+                    <div class="img">
+                      <img src="https://media.voocdn.com/media/image/id/5f93af9dacc3998db58b45a3_300x" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="title">
+                        Lĩnh vực</div>
+                      <div class="sub-title">
+                        Spirit Realm (The World of Fantasy)</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="img">
+                      <img src="https://media.voocdn.com/media/image/id/5fc58baeacc39908da8b4583_300x" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="title">
+                        Tiền Bối, Đừng Đánh Màu Son Đó</div>
+                      <div class="sub-title">
+                        Sunbae, Don't Put On That Lipstick (2021)</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="img">
+                      <img src="https://media.voocdn.com/media/image/id/5ff4223aacc39929278b456e_300x" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="title">
+                        Hạnh Phúc Nhỏ Của Anh</div>
+                      <div class="sub-title">
+                        My Little Happiness (2021)</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="img">
+                      <img src="https://media.voocdn.com/media/image/id/5fe1d064acc399b3408b456b_300x" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="title">
+                        Tình Yêu Chốn Đô Thị</div>
+                      <div class="sub-title">
+                        Lovestruck in the City (2020)</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="img">
+                      <img src="https://media.voocdn.com/media/image/id/5c9ca410acc399eab98b456e_300x" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="title">
+                        Đảo Hải Tặc</div>
+                      <div class="sub-title">
+                        One Piece</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="img">
+                      <img src="https://media.voocdn.com/media/image/id/5f97df41acc3998d478b4574_300x" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="title">
+                        Hữu Phỉ</div>
+                      <div class="sub-title">
+                        Legend Of Fei</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="img">
+                      <img src="https://media.voocdn.com/media/image/id/5ffc2ceaacc3993b998b4577_300x" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="title">
+                        Thất Nghiệp Chuyển Sinh</div>
+                      <div class="sub-title">
+                        Mushoku Tensei: Jobless Reincarnation</div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="container-box-app container-box-app--dark">
+                <div class="container__heading-box">
+                    <b>Phim Chiếu Rạp</b>
+                     <span>Xem tất cả
+                        <i class="fas fa-angle-right"></i>
+                    </span>
+                
+                   
+                </div>
+                <div class="slider owl-carousel">
+                   <a href="#">
+                    <div class="card">
+                        <div class="img">
+                          <img src="https://media.voocdn.com/media/image/id/5ef39a3facc399ea668b4630_300x" alt="">
+                        </div>
+                        <div class="content">
+                          <div class="title">
+                           Ta chính là cô nương như thế</div>
+                          <div class="sub-title">
+                            I Am Just This Type of Girl (Con Gái Là Thế Đó)</div>
+                        </div>
+                      </div>
+                   </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="img">
+                          <img src="https://media.voocdn.com/media/image/id/5f93af9dacc3998db58b45a3_300x" alt="">
+                        </div>
+                        <div class="content">
+                          <div class="title">
+                            Lĩnh vực</div>
+                          <div class="sub-title">
+                            Spirit Realm (The World of Fantasy)</div>
+                        </div>
+                      </div>
+                </a>
+               
+                  <div class="card">
+                    <div class="img">
+                      <img src="https://media.voocdn.com/media/image/id/5fc58baeacc39908da8b4583_300x" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="title">
+                        Tiền Bối, Đừng Đánh Màu Son Đó</div>
+                      <div class="sub-title">
+                        Sunbae, Don't Put On That Lipstick (2021)</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="img">
+                      <img src="https://media.voocdn.com/media/image/id/5ff4223aacc39929278b456e_300x" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="title">
+                        Hạnh Phúc Nhỏ Của Anh</div>
+                      <div class="sub-title">
+                        My Little Happiness (2021)</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="img">
+                      <img src="https://media.voocdn.com/media/image/id/5fe1d064acc399b3408b456b_300x" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="title">
+                        Tình Yêu Chốn Đô Thị</div>
+                      <div class="sub-title">
+                        Lovestruck in the City (2020)</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="img">
+                      <img src="https://media.voocdn.com/media/image/id/5c9ca410acc399eab98b456e_300x" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="title">
+                        Đảo Hải Tặc</div>
+                      <div class="sub-title">
+                        One Piece</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="img">
+                      <img src="https://media.voocdn.com/media/image/id/5f97df41acc3998d478b4574_300x" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="title">
+                        Hữu Phỉ</div>
+                      <div class="sub-title">
+                        Legend Of Fei</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="img">
+                      <img src="https://media.voocdn.com/media/image/id/5ffc2ceaacc3993b998b4577_300x" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="title">
+                        Thất Nghiệp Chuyển Sinh</div>
+                      <div class="sub-title">
+                        Mushoku Tensei: Jobless Reincarnation</div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <script>
+                $(".slider").owlCarousel({
+                   loop: true,
+                  // autoplay: true,
+                  // autoplayTimeout: 2000, //2000ms = 2s;
+                  // autoplayHoverPause: true,
+                  items:5
+                });
+              </script>
+        </div>
+        <div class="sidebar">
+           <div class="sidebar__heading">
+               <h1>BẢNG XẾP HẠNG</h1>
+               <ul class="sidebar__list-btn">
+                <li class="sidebar__list-item-btn sidebar__list-item-btn--active">
+                    <a href="#">196 Phim Bộ</a>
+                </li>
+                <li class="sidebar__list-item-btn">
+                    <a href="#">41 Phim Lẻ</a>
+                </li>
+                <li class="sidebar__list-item-btn">
+                    <a href="#">22 Hoạt Hình</a>
+                </li>
+               </ul>
+           </div>
+           <ul class="sidebar__list">
+               <li class="sidebar__item">
+                    <a href="" class="sidebar__item-link">
+                        <img src="https://media.voocdn.com/media/image/id/5fd19cd2acc399e1d98b45b5_480x" alt="" class="sidebar__img">
+                    <div class="sidebar__item-info">
+                        <span class="sidebar__item-head">Mr. Queen (Công Chúa Khó Gần)</span>
+                        <span class="sidebar__item-subhead">Mr. Queen (2020)</span>
+                       
+                        <div class="sidebar__item-ep">
+                            <span class="sidebar__item-ep-name">
+                                Tập 13 Preview
+                            </span>
+                        </div>
+                    </div>
+                    </a>
+               </li>
+               <li class="sidebar__item">
+                <a href="" class="sidebar__item-link">
+                    <img src="https://media.voocdn.com/media/image/id/5fd19cd2acc399e1d98b45b5_480x" alt="" class="sidebar__img">
+                    <div class="sidebar__item-info">
+                        <span class="sidebar__item-head">Mr. Queen (Công Chúa Khó Gần)</span>
+                        <span class="sidebar__item-subhead">Mr. Queen (2020)</span>
+                        
+                        <div class="sidebar__item-ep">
+                            <span class="sidebar__item-ep-name">
+                                Tập 13 Preview
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="sidebar__item">
+                <a href="" class="sidebar__item-link">
+                    <img src="https://media.voocdn.com/media/image/id/5fd19cd2acc399e1d98b45b5_480x" alt="" class="sidebar__img">
+                    <div class="sidebar__item-info">
+                        <span class="sidebar__item-head">Mr. Queen (Công Chúa Khó Gần)</span>
+                        <span class="sidebar__item-subhead">Mr. Queen (2020)</span>
+                        
+                        <div class="sidebar__item-ep">
+                            <span class="sidebar__item-ep-name">
+                                Tập 13 Preview
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="sidebar__item">
+                <a href="" class="sidebar__item-link">
+                    <img src="https://media.voocdn.com/media/image/id/5fd19cd2acc399e1d98b45b5_480x" alt="" class="sidebar__img">
+                    <div class="sidebar__item-info">
+                        <span class="sidebar__item-head">Mr. Queen (Công Chúa Khó Gần)</span>
+                        <span class="sidebar__item-subhead">Mr. Queen (2020)</span>
+                        
+                        <div class="sidebar__item-ep">
+                            <span class="sidebar__item-ep-name">
+                                Tập 13 Preview
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="sidebar__item">
+                <a href="" class="sidebar__item-link">
+                    <img src="https://media.voocdn.com/media/image/id/5fd19cd2acc399e1d98b45b5_480x" alt="" class="sidebar__img">
+                    <div class="sidebar__item-info">
+                        <span class="sidebar__item-head">Mr. Queen (Công Chúa Khó Gần)</span>
+                        <span class="sidebar__item-subhead">Mr. Queen (2020)</span>
+                        
+                        <div class="sidebar__item-ep">
+                            <span class="sidebar__item-ep-name">
+                                Tập 13 Preview
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="sidebar__item">
+                <a href="" class="sidebar__item-link">
+                    <img src="https://media.voocdn.com/media/image/id/5fd19cd2acc399e1d98b45b5_480x" alt="" class="sidebar__img">
+                    <div class="sidebar__item-info">
+                        <span class="sidebar__item-head">Mr. Queen (Công Chúa Khó Gần)</span>
+                        <span class="sidebar__item-subhead">Mr. Queen (2020)</span>
+                        
+                        <div class="sidebar__item-ep">
+                            <span class="sidebar__item-ep-name">
+                                Tập 13 Preview
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="sidebar__item">
+                <a href="" class="sidebar__item-link">
+                    <img src="https://media.voocdn.com/media/image/id/5fd19cd2acc399e1d98b45b5_480x" alt="" class="sidebar__img">
+                    <div class="sidebar__item-info">
+                        <span class="sidebar__item-head">Mr. Queen (Công Chúa Khó Gần)</span>
+                        <span class="sidebar__item-subhead">Mr. Queen (2020)</span>
+                        
+                        <div class="sidebar__item-ep">
+                            <span class="sidebar__item-ep-name">
+                                Tập 13 Preview
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+           </ul>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__left">
+            <div class="header__logo-text">
+                <b>DONGPHYM</b>
+                <span>NET</span>
+            </div>
+            <p class="par">Nơi cập nhật những bộ phim mới hot nhất hiện nay.</p>
+        </div>
+        <div class="footer__right">
+            <span class="footer__right-name">Thông Tin</span>
+            <ul class="footer__right-list">
+                <li class="footer__right-item">
+                    <a href="#">Điều khoản sử dụng</a>
+                </li>
+                <li class="footer__right-item">
+                    <a href="#">Bản quyền và trách nhiệm nội dung</a>
+                </li>
+                <li class="footer__right-item">
+                    <a href="#">Admin: ads@dongphim.net</a>
+                </li>
+                <li class="footer__right-item">
+                    <a href="#">Liên hệ QC: ads.movies888@gmail.com</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <div class="footer1">
+        <div class="footer1-left">
+            <p>© 2017 Copyright
+                <a href="#">
+                    <b class="ft-name">dongphym.net</b>
+                </a>
+                . All Rights reserved.
+            </p>
+        </div>
+        <div class="footer1-right">
+            <a href="#">Back to top 
+                <i class="footer1-right__icon fas fa-angle-up"></i>
+            </a>
+           
+        </div>
+    </div>
+</html>
