@@ -62,7 +62,7 @@ body{
     background-size: cover;
     background-position: top;
     z-index: 1700;
-    positive: fixed;
+    position: fixed;
 }
 .header__logo-link{
     text-decoration: none;
