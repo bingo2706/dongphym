@@ -213,10 +213,11 @@ body{
     padding-left: 40px;
     display: table-cell;
 }
+
+
 /*=======navigation======*/
 .navigation__checkbox{
-    display: none;
-    
+    display: none;   
 }
 .navigation__button{
         width: 4rem;
@@ -248,9 +249,10 @@ body{
   
   .navigation__checkbox:checked ~ .navigation__nav {
     width: 100%;
-    opacity: 1;
+    opacity: 1; 
     left: 0;
-}
+    }
+    
 .navigation__icon {
     position: relative;
     margin-top: 2rem; }
@@ -304,6 +306,7 @@ body{
     list-style: none;
     padding-left: 0;
     text-align: left;
+   
 }
 .navigation-item{
     margin: 1rem;
@@ -436,7 +439,7 @@ body{
 
   }
   .slider .card .img{
-    height: 200px;
+    height: 240px;
     width: 100%;
   }
   .slider .card .img img{
@@ -472,9 +475,34 @@ body{
   .card:hover .title{
     color: #dcf82e;
   }
+  .card:hover .card__icon{
+    display: block;
+  }
   .card:hover .img img{
     filter: brightness(70%);
   }
+  .card__ep{
+    position: absolute;
+    top: 1.2rem;
+    left: 1.5rem;
+  }
+  .card__ep-name{
+      font-size: 1.4rem;
+      font-weight: 300;
+      color: var(--white-color);
+      padding: 4px 4px;
+      background-color: rgba(0,0,0,0.4);
+      border-radius: 8px;
+  }
+  .card__icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-125%);
+    font-size: 2.2rem;
+    color: var(--white-color);
+    display: none;
+    }
   .container-box-app--dark{
       margin-top: 20px;
       background-color: var(--primary-color-dark);
@@ -486,7 +514,7 @@ body{
   .sidebar{
     flex: 1;
     margin: 20px 15px;
-    height: 100vh;
+    height: 2000px;
     background-color: var(--primary-color-dark);
   }
   .sidebar__heading{
