@@ -55,6 +55,58 @@ body{
     padding-right: 5px;
     width: 83.3334%;
 }
+/*=========SCROLLBAR==============*/
+body::-webkit-scrollbar{
+    width: 0;
+}
+#scrollPath{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+}
+#progressbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+   
+    background-image: linear-gradient(to top, #008aff,#00ffe7);
+    animation: animate 5s linear infinite;
+}
+@keyframes animate{
+    0%
+    {
+        filter: hue-rotate(0deg);
+    }
+    50%
+    {
+        filter: hue-rotate(360deg);
+    }
+}
+#progressbar::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top,#008aff,#00ffe7);
+    filter: blur(10px);
+}
+#progressbar::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top,#008aff,#00ffe7);
+    filter: blur(30px);
+}
+/*=================HEADER===========*/
 .header{
     width: 100%;
     max-height: 150px;
@@ -94,11 +146,13 @@ body{
     width: 330px;
     align-items: center;
     border: 1px solid var(--border-color);
+   
 }
 .header__search-input-wrap {
     flex: 1;
     height: 100%;
     position: relative;
+   
 }
 .header__search-input {
     width: 100%;
@@ -235,18 +289,35 @@ body{
 
 .navigation__background {
     background-color: var(--white-color);
-    border-radius: 50%;
+    /* border-radius: 50%; */
     width: 6rem;
     height: 6rem;
     position: fixed;
-    top: 6.5rem;
-    right: -6.5rem;
-    transition: transform 0.8s;
+    top: -100rem;
+    right: 73.5rem;
+   
+    transition: all 1.0s ease-in-out;
     z-index: 1000; }
-  
+.navigation__background::before{
+    content: "";
+    background-color: rgba(255, 255, 255, 0.7);
+    /* border-radius: 50%; */
+    width: 6rem;
+    height: 6rem;
+    position: fixed;
+    top: -120rem;
+    right: 73.5rem;
+   
+    transition: all 1.2s ease-in-out;
+    z-index: 1000;
+}
+   
   .navigation__checkbox:checked ~ .navigation__background {
-    transform: scale(80); }
-  
+     
+    transform: scale(60); }
+    .navigation__checkbox:checked ~ .navigation__background::before {
+       
+        transform: scale(50); }
   .navigation__checkbox:checked ~ .navigation__nav {
     width: 100%;
     opacity: 1; 
@@ -296,7 +367,7 @@ body{
     width: 0;
     height: 100vh;
     z-index: 1500;
-    transition: all 0.8s;
+    transition: all 1.4s;
     display: flex;
     justify-content: space-evenly;
 }
@@ -324,7 +395,6 @@ body{
     transition: all .4s;
     margin-bottom: 2rem;
 }
-  
   .navigation__link:hover {
     color: #5a73fc;
     background-position: 100%;
@@ -421,13 +491,16 @@ body{
      color: var(--white-color);
      
  }
- .container__heading-box span{
+ .container__heading-box a{
+     text-decoration: none;
      font-size: 1.6rem;
      font-weight: 500;
      color: var(--white-color);
-    
-
  }
+ .container__heading-box a:hover{
+     color: #dcf42b;
+ }
+
  .slider{
     max-width: 1200px;
     display: flex;
@@ -503,6 +576,25 @@ body{
     color: var(--white-color);
     display: none;
     }
+    /* .owl-prev{
+        border: none;
+        outline: none;
+        background-color: #020d18;
+        width: 30px;
+        height: 80px;
+    }
+    .owl-prev span{
+        font-size: 2rem;
+        padding: 2px 4px;
+        color: var(--white-color);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.8);
+    }
+    .owl-prev{
+     
+    }
+    .owl-next{
+
+    } */
   .container-box-app--dark{
       margin-top: 20px;
       background-color: var(--primary-color-dark);
@@ -514,21 +606,27 @@ body{
   .sidebar{
     flex: 1;
     margin: 20px 15px;
-    height: 2000px;
+    height: 2960px;
     background-color: var(--primary-color-dark);
   }
   .sidebar__heading{
-      padding: 10px 15px;
+      padding: 10px 15px 10px 0;
+      margin-left: 15px;
+      width: 332px;
   }
+ .sidebar__heading--has-border{
+    border-top: 1px solid var(--border-color);
+ }
   .sidebar__heading h1{
       font-weight: 700;
       font-size: 2.2rem;
       color: var(--white-color);
+      
   }
   .sidebar__list-btn{
       display: flex;
       list-style: none;
-    padding-left: 0;
+        padding-left: 0;
   }
   .sidebar__list-item-btn{
       width: 114px;
@@ -556,17 +654,39 @@ body{
       max-height: 630px;
       overflow-y: auto;
       overflow-x: hidden;
+     width: 90%;
+     margin-bottom: 0;
+  }
+  .sidebar__list--notscrollbar{
+    overflow: hidden;
+    max-height: 100%;
+}
+  .sidebar__list::-webkit-scrollbar{
+      width: 4px;
+  }
+  .sidebar__list::-webkit-scrollbar-thumb{
+      background-color: #2d2d2d;
+      border-radius: 2px;
   }
   .sidebar__item{
-      position: relative;
+    position: relative;
+  }
+  .sidebar__item:not(:last-child){
+     
       margin-bottom: 20px;
   }
-  .sidebar__item:hover{
+  .sidebar__item:hover .sidebar__img{
       filter: brightness(70%);
+  }
+  .sidebar__item:hover .sidebar__item-head{
+      color: #dcf842;    
+  }
+  .sidebar__item:hover .sidebar__item-icon{
+      display: block;
   }
   .sidebar__item-link{
       display: block;
-        text-decoration: none;
+      text-decoration: none;
   }
   .sidebar__img{
     width: 340px;
@@ -592,6 +712,14 @@ body{
      bottom: 20px;
      left: 10px;
  }
+ .sidebar__item-icon{
+     font-size: 2.2rem;
+     color: var(--white-color);
+     position: absolute;
+     top: 60px;
+     left: 158px;
+     display: none;
+ }
  .sidebar__item-ep{
      margin-top: 4px;
  }
@@ -603,6 +731,37 @@ body{
      border-radius: 3px;
      padding: 2px 4px;
  }
+ /*=========== SIDEBAR 2==========*/
+ .sidebar__item2{
+     padding: 10px 0;
+     border-bottom: 1px solid #1d1d1d;
+ }
+ .sidebar__item2:hover .sidebar__item2-name{
+    color: #dcf842; 
+ }
+ .sidebar__item2-link{
+     text-decoration: none;
+     display: flex;
+ }
+ .sidebar__item2-img{
+     width: 90px;
+     height: 128px;
+ }
+ .sidebar__item2-info{
+     padding-left: 10px;
+ }
+ .sidebar__item2-name{
+     font-size: 1.4rem;
+     color: var(--white-color);
+     font-weight: 300;
+ }
+ .sidebar__item2-subname{
+     font-size: 1.2rem;
+     color: #abb7c4;
+     font-weight: 300;
+     margin-top: 10px;
+ }
+ 
  /*========footer==========*/
  .footer{
      background-image: url(https://dongphym.net/images/dp/ramt7.jpg);
