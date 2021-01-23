@@ -402,6 +402,7 @@ body::-webkit-scrollbar{
 /*===================SLIDESHOW GALARY=============*/
 .container {
     position: relative;
+    padding-top: 109px;
   }
   
   /* Hide the images by default */
