@@ -400,6 +400,7 @@ body::-webkit-scrollbar{
     background-position: 100%;
     transform: translateX(1rem); }
 /*===================SLIDESHOW GALARY=============*/
+
 .container {
     position: relative;
     padding-top: 109px;
