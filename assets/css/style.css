@@ -608,7 +608,7 @@ body::-webkit-scrollbar{
   .sidebar{
     flex: 1;
     margin: 20px 15px;
-    height: 2960px;
+    height: 2930px;
     background-color: var(--primary-color-dark);
   }
   .sidebar__heading{
